@@ -1,0 +1,1 @@
+make ; echo "------- COMPILE OK, EXECUTING ------- " ;  ./ipk-sniffer ; echo "------- END ./run_sniffer.sh -------"
