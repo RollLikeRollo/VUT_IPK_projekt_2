@@ -1,14 +1,17 @@
-CC = gcc
-CFLAGS  = -g -Wall
-FILENAME = ipk-sniffer
+CC = g++
+CFLAGS  = -g -Wall -std=c99 -pedantic
+OBJFILES =  argcheck.o
+TARGET_MAIN = ipk-sniffer
 
-all: $(FILENAME)
+all: $(TARGET_MAIN)
 
-$(FILENAME): $(FILENAME).o
-	$(CC) $(CFLAGS) -o $(FILENAME) $(FILENAME).o
-
-$(FILENAME).o:  ipk-sniffer.c ipk-sniffer.h
-	$(CC) $(CFLAGS) -c ipk-sniffer.c
+$(TARGET_MAIN) : $(OBJFILES) $(TARGET_MAIN).o
+	$(CC) $(CFLAGS) -o $(TARGET_MAIN) $(TARGET_MAIN).o $(OBJFILES) $(LDFLAGS)
 
 clean:
-	$(RM) $(FILENAME)  *.o
+	$(RM) $(TARGET_MAIN)  *.o *.tgz *.gz *.tar ; rm -rf Docs/
+doc:
+	doxygen Doxyfile
+
+pack:
+	tar -czvf xzbori20.tar --exclude='Materials' *.c *.h README manual.pdf Makefile 
