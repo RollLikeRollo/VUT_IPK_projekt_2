@@ -1,7 +1,8 @@
 CC = g++
-CFLAGS  = -g -Wall -std=c99 -pedantic
-OBJFILES =  argcheck.o
+CFLAGS = -Wall -std=c++11 -pedantic -g
+OBJFILES =  
 TARGET_MAIN = ipk-sniffer
+LDFLAGS = -g -lpcap
 
 all: $(TARGET_MAIN)
 
