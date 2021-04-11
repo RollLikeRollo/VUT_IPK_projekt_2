@@ -1,1 +1,1 @@
-make ; echo "------- COMPILE OK, EXECUTING ------- " ;  ./ipk-sniffer -i eth0 ; echo "------- END ./run_sniffer.sh -------"
+make ; echo "------- COMPILE OK, EXECUTING ------- " ;  ./ipk-sniffer -i enp33s0 ; echo "------- END ./run_sniffer.sh -------"
