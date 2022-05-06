@@ -1,4 +1,11 @@
-Author: xzbori20@stud.fit.vutbr.cz Jan Zboril
+# Projekt č. 2 do předmětu IPK na FIT VUT v Brně.
+## Jednoduchý sniffer paketů v C.
+
+body: 16,5/20
+
+Za studijní problémy vzniklé kopírováním celého projektu nebo jen jeho částí autor nenese zodpovědnost. Na vlastní riziko. Ale to už ve 4. semestru víte...
+
+Author: ****************************** Rollo
 Simple packet sniffer for IPK at Brno University of Technology, Faculty of IT
 Spring of 2021
 Copyright (c) 2021
